@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+  max-width: 100%;
+  padding: 16px 32px;
+  background-color: #f5ba13;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+.note {
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 80%;
+  margin: 30px auto;  
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  font-weight:600;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 13px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.button-container{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.note button {
+  display: block;
+  color: #2b2a29;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.note:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.note:hover button {
+  visibility: visible;
+}
+form.create-note {
+  position: relative;
+  width: 80%;
+  margin: 30px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+form.create-note button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 7px 7px;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 7px;
+}
+.color{
+  display: inline;
+  border-radius: 100%;
+  padding: 13px 13px;
+  border: 2px solid black;
+}
+.color1{
+  background-color: rgb(255, 255, 255);
+}
+.color2{
+  background-color: rgb(0, 255, 157);
+}
+.color3{
+  background-color: rgb(42, 146, 216);
+}
+.color4{
+  background-color: rgb(252, 140, 233);
+}
+.color5{
+  background-color: rgb(238, 255, 144);
+}
+.color6{
+  background-color: rgb(250, 176, 106);
+}
+.color7{
+  background-color: rgb(123, 245, 239);
+}
+.color8{
+  background-color: rgb(228, 187, 255);
+}
+.color9{
+  background-color: rgb(250, 151, 184);
+}
+.color:hover{
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+@media screen and (min-width : 700px) {
+  form.create-note{
+    width: 480px;
+  }
+  .note{
+    width: 240px;
+    margin: 16px;
+    float: left;
+  }
+  .note button {
+    visibility: hidden;
+    position: relative;
+    float: right;
+    margin-right: -1px;
+    color: #2b2a29;
+    background-color: white;
+    border: none;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+  }
+  .button-container{
+    display: block;
+  }
+  .note button{
+    display: inline;
+  }
+}
+
+
+
+/* footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 2.5rem;
+  border: 1px solid black;
+}
+
+footer p {
+  color: #ccc;
+} */
